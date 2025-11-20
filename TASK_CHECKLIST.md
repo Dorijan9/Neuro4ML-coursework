@@ -3,13 +3,13 @@
 ## ✅ Progress Tracking
 
 ### Task 1: Load and Plot the Data
-- [ ] **Task 1A**: Preprocess and compute basic statistics
-  - [ ] Whiten velocities (mean=0, std=1)
-  - [ ] Print number of neurons
-  - [ ] Print total number of spikes
-  - [ ] Print experiment duration
-  - [ ] Print/estimate spike sampling rate
-  - [ ] Print/estimate velocity sampling rate
+- [X] **Task 1A**: Preprocess and compute basic statistics
+  - [X] Whiten velocities (mean=0, std=1)
+  - [X] Print number of neurons
+  - [X] Print total number of spikes
+  - [X] Print experiment duration
+  - [X] Print/estimate spike sampling rate
+  - [X] Print/estimate velocity sampling rate
 
 - [ ] **Task 1B**: Plot the data
   - [ ] Raster plot (whole dataset)
