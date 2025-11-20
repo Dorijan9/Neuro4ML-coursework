@@ -11,13 +11,13 @@
   - [X] Print/estimate spike sampling rate
   - [X] Print/estimate velocity sampling rate
 
-- [ ] **Task 1B**: Plot the data
-  - [ ] Raster plot (whole dataset)
-  - [ ] Raster plot (1000-1010 seconds)
-  - [ ] Velocity plot (whole dataset)
-  - [ ] Velocity plot (1000-1010 seconds)
-  - [ ] Firing rate bar chart
-  - [ ] Velocity trajectory in (x,y) space
+- [X] **Task 1B**: Plot the data
+  - [X] Raster plot (whole dataset)
+  - [X] Raster plot (1000-1010 seconds)
+  - [X] Velocity plot (whole dataset)
+  - [X] Velocity plot (1000-1010 seconds)
+  - [X] Firing rate bar chart
+  - [X] Velocity trajectory in (x,y) space
 
 ### Task 2: Divide Data into Test/Train and Batches
 - [ ] **Task 2A**: Why not continuous time ranges?
