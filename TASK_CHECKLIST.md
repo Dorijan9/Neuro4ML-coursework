@@ -20,85 +20,85 @@
   - [X] Velocity trajectory in (x,y) space
 
 ### Task 2: Divide Data into Test/Train and Batches
-- [ ] **Task 2A**: Why not continuous time ranges?
-  - [ ] Compute speeds from velocities
-  - [ ] Plot speeds (with smoothing)
-  - [ ] Compute and print speed statistics
-  - [ ] Explain why continuous splitting is bad
+- [X] **Task 2A**: Why not continuous time ranges?
+  - [X] Compute speeds from velocities
+  - [X] Plot speeds (with smoothing)
+  - [X] Compute and print speed statistics
+  - [X] Explain why continuous splitting is bad
 
-- [ ] **Task 2B**: Equally distributed segments
-  - [ ] Divide data into segments
-  - [ ] Assign segments to train/val/test sets
-  - [ ] Implement `batched_data()` generator function
-  - [ ] Convert spikes to binary arrays
-  - [ ] Interpolate velocities to simulation time points
-  - [ ] Plot sample batch (4 examples)
+- [X] **Task 2B**: Equally distributed segments
+  - [X] Divide data into segments
+  - [X] Assign segments to train/val/test sets
+  - [X] Implement `batched_data()` generator function
+  - [X] Convert spikes to binary arrays
+  - [X] Interpolate velocities to simulation time points
+  - [X] Plot sample batch (4 examples)
 
 ### Task 3: Spiking Neural Network Model
-- [ ] **Task 3A**: Single layer simulation code
-  - [ ] Create `SNNLayer` class (nn.Module)
-  - [ ] Implement weight matrix (trainable)
-  - [ ] Implement time constants (trainable, per-neuron)
-  - [ ] Implement forward pass (LIF dynamics)
-  - [ ] Support spiking and non-spiking output
-  - [ ] Initialize weights and time constants
-  - [ ] Ensure tau stays positive
-  - [ ] (Optional) Create multi-layer network class
+- [X] **Task 3A**: Single layer simulation code
+  - [X] Create `SNNLayer` class (nn.Module)
+  - [X] Implement weight matrix (trainable)
+  - [X] Implement time constants (trainable, per-neuron)
+  - [X] Implement forward pass (LIF dynamics)
+  - [X] Support spiking and non-spiking output
+  - [X] Initialize weights and time constants
+  - [X] Ensure tau stays positive
+  - [X] (Optional) Create multi-layer network class
 
-- [ ] **Task 3B**: Verify your code
-  - [ ] Set up test simulation (50 sp/s input, 2 neurons)
-  - [ ] Run simulation and record membrane potentials
-  - [ ] Plot membrane potentials and spikes
-  - [ ] Print spike counts (first neuron should have 0)
-  - [ ] Derive analytic solution
-  - [ ] Plot simulated vs analytic solution
+- [X] **Task 3B**: Verify your code
+  - [X] Set up test simulation (50 sp/s input, 2 neurons)
+  - [X] Run simulation and record membrane potentials
+  - [X] Plot membrane potentials and spikes
+  - [X] Print spike counts (first neuron should have 0)
+  - [X] Derive analytic solution
+  - [X] Plot simulated vs analytic solution
 
 ### Task 4: Evaluating Fit to Data
-- [ ] **Task 4**: Evaluation and initialization
-  - [ ] Write `evaluate_network()` function
-  - [ ] Compute test loss (MSE)
-  - [ ] Compute null loss (baseline)
-  - [ ] Write visualization function for network internals
-  - [ ] Create network (100 spiking → 2 non-spiking)
-  - [ ] Plot input spikes
-  - [ ] Plot hidden layer spikes
-  - [ ] Plot output vs target velocities
-  - [ ] Compute and plot firing rates (histogram)
-  - [ ] Tune initialization to get reasonable firing rates (20-100 Hz)
-  - [ ] Print baseline loss
+- [X] **Task 4**: Evaluation and initialization
+  - [X] Write `evaluate_network()` function
+  - [X] Compute test loss (MSE)
+  - [X] Compute null loss (baseline)
+  - [X] Write visualization function for network internals
+  - [X] Create network (100 spiking → 2 non-spiking)
+  - [X] Plot input spikes
+  - [X] Plot hidden layer spikes
+  - [X] Plot output vs target velocities
+  - [X] Compute and plot firing rates (histogram)
+  - [X] Tune initialization to get reasonable firing rates (20-100 Hz)
+  - [X] Print baseline loss
 
 ### Task 5: Training
-- [ ] **Task 5**: Train single-layer network
-  - [ ] Create single-layer network (non-spiking output)
-  - [ ] Find good initialization
-  - [ ] Set up optimizer (Adam, lr=0.001)
-  - [ ] Implement training loop
-  - [ ] Clamp tau to be positive
-  - [ ] Track training and validation loss
-  - [ ] Plot loss curves (log scale)
-  - [ ] Evaluate on test set
-  - [ ] Print test loss and null loss
-  - [ ] Plot trained outputs (8 random windows)
-  - [ ] Plot smoothed outputs
+- [X] **Task 5**: Train single-layer network
+  - [X] Create single-layer network (non-spiking output)
+  - [X] Find good initialization
+  - [X] Set up optimizer (Adam, lr=0.001)
+  - [X] Implement training loop
+  - [X] Clamp tau to be positive
+  - [X] Track training and validation loss
+  - [X] Plot loss curves (log scale)
+  - [X] Evaluate on test set
+  - [X] Print test loss and null loss
+  - [X] Plot trained outputs (8 random windows)
+  - [X] Plot smoothed outputs
 
 ### Task 6: Longer Length Decoding
-- [ ] **Task 6**: Decoding plot
-  - [ ] Implement `decoding_plot()` function
-  - [ ] Create overlapping 1-second windows
-  - [ ] Sample every 0.2 seconds
-  - [ ] Use final timestep as prediction
-  - [ ] Plot 8 different 15-second segments
-  - [ ] Compare actual vs predicted velocities
-  - [ ] Results should match `fits.png` style
+- [X] **Task 6**: Decoding plot
+  - [X] Implement `decoding_plot()` function
+  - [X] Create overlapping 1-second windows
+  - [X] Sample every 0.2 seconds
+  - [X] Use final timestep as prediction
+  - [X] Plot 8 different 15-second segments
+  - [X] Compare actual vs predicted velocities
+  - [X] Results should match `fits.png` style
 
 ### Task 7: Comparing Spiking and Non-Spiking
-- [ ] **Task 7**: Spiking vs non-spiking comparison
-  - [ ] Train network with spiking hidden layer
-  - [ ] Compare test losses
-  - [ ] Plot decoding results for both
-  - [ ] Plot weight distributions (both models)
-  - [ ] Plot time constant distribution (spiking model)
-  - [ ] (Optional) Compare to Perez et al. 2021
+- [X] **Task 7**: Spiking vs non-spiking comparison
+  - [X] Train network with spiking hidden layer
+  - [X] Compare test losses
+  - [X] Plot decoding results for both
+  - [X] Plot weight distributions (both models)
+  - [X] Plot time constant distribution (spiking model)
+  - [X] (Optional) Compare to Perez et al. 2021
 
 ---
 
